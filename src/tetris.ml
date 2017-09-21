@@ -98,13 +98,13 @@ let draw_block x y =
   fillRect ctx (w * x) (h * y) (w - 1) (h - 1);
   strokeRect ctx (w * x) (h * y) (w - 1) (h - 1)
 
-let render board current () = 
-  let {shape; x; y} = !current in
+let render b_ref c_ref () = 
+  let {shape; x; y} = !c_ref in
   clearRect ctx 0 0 w_size h_size;
   strokeStyle ctx "black";
   for i = 0 to cols - 1 do
     for j = 0 to rows - 1 do 
-      let clr = get j i !board in
+      let clr = get j i !b_ref in
       if clr <> 0 then
         (fillStyle ctx @@ colors.((clr - 1) mod 7);
          draw_block i j)
