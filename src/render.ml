@@ -32,5 +32,3 @@ let render board current ws hs ctx () =
          draw_block ctx (ws / cols) (hs / rows) (currentX + x) (currentY + y))
     done
   done
-
-
