@@ -51,12 +51,12 @@ let clear_lines board =
     if i < 0 then () 
     else (if line_is_full i 
           then
-            let sound = get_by_id "clearsound" in play sound;
+            (
             for j = i downto 1 do
               set_row j board (get_row (j-1) board);
             done;
             set_row 0 board (Array.make cols 0);
-            loop i
+            loop i)
           else loop (i-1))
   in loop (rows-1)
 

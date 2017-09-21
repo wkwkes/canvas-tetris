@@ -78,12 +78,7 @@ type shape = { shape : int Board.t; x : int; y : int}
 
 (***** js bindings *****)
 
-type id (** Abstract type for id object *)
-external get_by_id : string -> id =
-  "getElementById" [@@bs.scope "document"] [@@bs.val]
-
-external play : id -> unit =
-  "" [@@bs.send]
+type id
 
 external clearInterval : int -> unit = "" [@@bs.val]
 external setInterval : ('a Board.t -> bool) -> int -> int = "" [@@bs.val]
