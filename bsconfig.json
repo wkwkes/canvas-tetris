@@ -1,0 +1,10 @@
+{
+  "name": "tetris",
+  "version": "0.1.0",
+  "sources": [
+    "ocaml"
+  ],
+  "bs-dependencies": [],
+  "generate-merlin": false,
+  "bsc-flags": ["-bs-super-errors"]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "canvas-tetris",
+  "version": "0.1.0",
+  "scripts": {
+    "clean": "bsb -clean-world",
+    "build": "bsb -make-world && webpack",
+    "watch": "bsb -make-world -w"
+  },
+  "keywords": [
+    "BuckleScript"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "bs-jest": "^0.1.0",
+    "bs-platform": "1.9.1"
+  },
+  "dependencies": {
+    "bs-lwt": "git+https://github.com/mzp/bs-lwt.git"
+  }
+}

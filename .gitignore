@@ -1,0 +1,6 @@
+.vscode
+node_modules
+.merlin
+ocaml/memo.md
+lib/*
+package-lock.json
