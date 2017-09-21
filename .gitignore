@@ -2,5 +2,6 @@
 node_modules
 .merlin
 ocaml/memo.md
+ocaml/test.ml
+js/*
 lib/*
-package-lock.json
