@@ -74,7 +74,7 @@ end = struct
     | _ -> false
 end
 
-type shape = {shape : int Board.t; currentX : int; currentY : int}
+type shape = { shape : int Board.t; x : int; y : int}
 
 (***** js bindings *****)
 
