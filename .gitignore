@@ -1,7 +1,6 @@
 .vscode
 node_modules
 .merlin
-ocaml/memo.md
-ocaml/test.ml
-js/*
+src/memo.md
 lib/*
+package-lock.json

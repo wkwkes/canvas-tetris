@@ -2,7 +2,7 @@
   "name": "tetris",
   "version": "0.1.0",
   "sources": [
-    "ocaml"
+    "src"
   ],
   "bs-dependencies": [],
   "generate-merlin": false,
